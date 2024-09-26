@@ -7,12 +7,21 @@ class welcomescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.black,
         height: 250,
         width: 300,
-        child: const Text(
-          "rafay",
-          style: TextStyle(color: Colors.white),
+        decoration: const BoxDecoration(
+          color: Colors.black,
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(50), bottomRight: Radius.circular(50)),
+        ),
+        child: const Center(
+          child: Text("This is my new website",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 15,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 5,
+              )),
         ),
       ),
     );
